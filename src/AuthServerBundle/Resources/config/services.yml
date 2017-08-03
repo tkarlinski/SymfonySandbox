@@ -1,0 +1,4 @@
+services:
+#    auth_server.example:
+#        class: AuthServerBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
