@@ -24,7 +24,8 @@
         "symfony/swiftmailer-bundle": "~2.3,>=2.3.10",
         "symfony/symfony": "2.8.*",
         "twig/twig": "^1.0||^2.0",
-        "friendsofsymfony/oauth-server-bundle": "*"
+        "friendsofsymfony/oauth-server-bundle": "^1.5.2",
+        "friendsofsymfony/user-bundle": "^2.0.1"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",
@@ -48,9 +49,6 @@
     },
     "config": {
         "bin-dir": "bin",
-        "platform": {
-            "php": "5.3.9"
-        },
         "sort-packages": true
     },
     "extra": {

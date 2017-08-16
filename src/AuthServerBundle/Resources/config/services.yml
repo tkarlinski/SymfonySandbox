@@ -2,3 +2,17 @@ services:
 #    auth_server.example:
 #        class: AuthServerBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
+
+    acme_oauth_server.authorize.form_type:
+        class: 'AuthServerBundle\Form\Type\AuthorizeFormType'
+
+    acme_oauth_server.authorize.form:
+        class: Symfony\Component\Form\Form
+        arguments:
+            - @acme_oauth_server.authorize.form_type
+            - acme_oauth_server_auth
+        factory-method: createNamed
+        factory-service: form.factory
+
+
+
