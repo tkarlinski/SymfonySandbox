@@ -3,9 +3,9 @@
 security:
 
     # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
-    providers:
-        in_memory:
-            memory: ~
+#    providers:
+#        in_memory:
+#            memory: ~
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -22,3 +22,12 @@ security:
 
             # https://symfony.com/doc/current/security/form_login_setup.html
             #form_login: ~
+    encoders:
+        OAuth2\ServerBundle\Entity\User:
+            algorithm:          sha512
+            encode_as_base64:   true
+            iterations:         5000
+
+    providers:
+        oauth2:
+            id: oauth2.user_provider
