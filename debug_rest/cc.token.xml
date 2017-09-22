@@ -1,0 +1,54 @@
+<RestClientRequest>
+  <option name="biscuits">
+    <list>
+      <Biscuit>
+        <option name="date" value="-1" />
+        <option name="domain" value="coop.apps.knpuniversity.com" />
+        <option name="name" value="oauth_server" />
+        <option name="path" value="/" />
+        <option name="value" value="jtome81m7lto8jkhr5de4f4usi" />
+      </Biscuit>
+    </list>
+  </option>
+  <option name="httpMethod" value="POST" />
+  <option name="urlBase" value="http://symfony-sandbox.lh" />
+  <option name="urlPath" value="/app_dev.php/cc/token" />
+  <option name="headers">
+    <list>
+      <KeyValuePair>
+        <option name="key" value="Accept" />
+        <option name="value" value="*/*" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="Cache-Control" />
+        <option name="value" value="no-cache" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="Authorization" />
+        <option name="value" value="Basic Q0xJRU5UX0E6Y215ang5bDA2MWtja2M0czBva2tvY2d3c3M4MGtzaw==" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="Accept" />
+        <option name="value" value="application/json" />
+      </KeyValuePair>
+    </list>
+  </option>
+  <option name="parameters">
+    <list>
+      <KeyValuePair>
+        <option name="key" value="grant_type" />
+        <option name="value" value="client_credentials" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="scope" />
+        <option name="value" value="scope1" />
+      </KeyValuePair>
+    </list>
+  </option>
+  <option name="parametersEnabled" value="true" />
+  <option name="haveTextToSend" value="false" />
+  <option name="haveFileToSend" value="false" />
+  <option name="isFileUpload" value="false" />
+  <option name="textToSend" value="" />
+  <option name="filesToSend" value="" />
+</RestClientRequest>
