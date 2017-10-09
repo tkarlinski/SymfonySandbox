@@ -46,6 +46,9 @@ class ClientCredentialsController extends Controller
 
         // Add Grant Types
         $server->addGrantType($this->get('oauth2.grant_type.client_credentials'));
+        $server->addGrantType($this->get('oauth2.grant_type.authorization_code'));
+        $server->addGrantType($this->get('oauth2.grant_type.refresh_token'));
+        $server->addGrantType($this->get('oauth2.grant_type.user_credentials'));
 
         return $server->handleTokenRequest($this->get('oauth2.request'), $this->get('oauth2.response'));
     }
