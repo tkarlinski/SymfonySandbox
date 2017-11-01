@@ -22,13 +22,13 @@
         <li>
             <form action="{{ path('app_openId_authorize_post') ~ '?' ~ app.request.queryString }}" method="post">
                 <input type="submit" class="button authorize" value="Yes, I Authorize This Request" />
-                <input type="hidden" name="authorize" value="1" />
+                <input type="hidden" name="is_authorized" value="1" />
             </form>
         </li>
         <li class="cancel">
             <form id="cancel" action="{{ path('app_openId_authorize_post') ~ '?' ~ app.request.queryString }}" method="post">
                 <a href="#" onclick="document.getElementById('cancel').submit()">cancel</a>
-                <input type="hidden" name="authorize" value="0" />
+                <input type="hidden" name="is_authorized" value="0" />
             </form>
         </li>
     </ul>
