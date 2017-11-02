@@ -43,7 +43,7 @@ class OpenIDController extends Controller
         $request = $this->get('oauth2.request');
         $response = $this->get('oauth2.response');
 
-        $authorized = boolval($request->request->get('authorize'));
+        $authorized = boolval($request->request->get('is_authorized'));
 
         return $server->handleAuthorizeRequest($request, $response, $authorized);
     }
