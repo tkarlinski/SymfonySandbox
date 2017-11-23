@@ -13,4 +13,4 @@
 /bin/
 /composer.phar
 /.idea
-
+/composer.lock
